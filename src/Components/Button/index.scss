@@ -1,0 +1,31 @@
+@import "../../Styles/variables";
+
+.button{
+    &__container{
+        & > button {
+            background-color: transparent;
+            border: 1px solid $white;
+            padding: 5px 10px;
+            color: $white;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: $transition;
+            &:hover{
+                background-color: $white;
+                color: $primary;
+            } 
+        }
+    }
+    &__disabled{
+        & > button {
+            opacity: 0.4;
+            &:hover{
+                background-color: transparent;
+                color: $white;
+                cursor: default;
+            } 
+        }
+    }
+}
+    

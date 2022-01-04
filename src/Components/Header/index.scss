@@ -1,0 +1,18 @@
+@import "../../Styles/variables";
+
+.header{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 100px;
+        background-color: $primary;
+        color: $white;
+        margin-bottom: 30px;
+    }
+    &__brand{
+        font-size: large;
+    }
+    &__description{
+        font-size: small;
+    }
+}

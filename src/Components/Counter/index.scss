@@ -1,0 +1,33 @@
+@import "../../Styles/variables";
+
+.counter{
+    &__container{
+        width: auto;
+        color: $white;
+        background-color: $primary;
+        border-radius: 5px;
+        text-align: center;
+        padding: 20px;
+        margin: 0 10px;
+        position: relative;
+        & > h1{
+            margin-bottom: 20px;
+        }
+        & > p{
+            height: 30px;
+            font-size: 13px;
+        }
+        & > span{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 10px;
+        }
+    }
+    &__actions{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-gap: 10px;
+    }
+}
+    

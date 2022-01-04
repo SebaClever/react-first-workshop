@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header, Container, Counter } from "./Components";
 
-function App() {
+export default function App() {
+  const counters = [
+    { id: 1, limit: 10 },
+    { id: 2, initial: 2, limit: 2 },
+    { id: 3, initial: -1, limit: 4 }
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Container>
+        {
+          counters.length > 0 &&
+          counters.map(counter => <Counter key={counter.id} initial={counter.initial} limit={counter.limit} />)
+        }  
+      </Container>
+    </>
   );
 }
 
-export default App;
