@@ -1,18 +1,27 @@
 @import "../../Styles/variables";
+@import "../../Styles/mixin";
 
 .header{
     &__container{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        padding: 20px 100px;
+        padding: 20px 30px;
         background-color: $primary;
         color: $white;
         margin-bottom: 30px;
+        @include media-medium {
+            flex-direction: row;
+        }
     }
     &__brand{
         font-size: large;
     }
     &__description{
         font-size: small;
+        margin-top: 10px;
+        @include media-medium {
+            margin-top: 0;
+        }
     }
 }
