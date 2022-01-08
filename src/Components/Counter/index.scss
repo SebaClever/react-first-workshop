@@ -2,13 +2,12 @@
 
 .counter{
     &__container{
-        width: auto;
+        width: 100%;
         color: $white;
         background-color: $primary;
         border-radius: 5px;
         text-align: center;
         padding: 20px;
-        margin: 0 10px;
         position: relative;
         & > h1{
             margin-bottom: 20px;

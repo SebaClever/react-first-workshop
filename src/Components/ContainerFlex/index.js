@@ -1,15 +1,15 @@
 import "./index.scss"
 import PropTypes from "prop-types"
 
-export default function Container(props) {
+export default function ContainerFlex(props) {
     const { children } = props
     return (
-        <div className="container__container">
+        <div className="flex__container">
             {children}
         </div>
     )
 }
 
-Container.propTypes = {
+ContainerFlex.propTypes = {
     children: PropTypes.element
 }

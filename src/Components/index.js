@@ -1,11 +1,15 @@
 import Button from "./Button";
-import Container from "./Container";
+import ContainerFlex from "./ContainerFlex";
+import ContainerGrid from "./ContainerGrid";
 import Counter from "./Counter";
 import Header from "./Header";
+import Title from "./Title";
 
 export {
     Button,
-    Container,
+    ContainerFlex,
+    ContainerGrid,
     Counter,
-    Header
+    Header,
+    Title,
 }
